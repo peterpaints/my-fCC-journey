@@ -1,0 +1,22 @@
+# Text Editor files #
+###################
+*.pyc
+
+# Other files #
+###################
+*.json
+*.kate-swp
+TributePageExample_Challenge1.html
+
+# Folders #
+###################
+include/
+lib/
+.cache/
+__pycache__/
+local/
+bin/
+
+
+
+
