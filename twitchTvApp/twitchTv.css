@@ -1,0 +1,121 @@
+body {
+  background-color: #4c70ba; }
+
+h3 {
+  color: white;
+  font-family: Ubuntu;
+  font-size: 2.3em; }
+
+main {
+  margin: 10px auto;
+  width: 300px;
+  border: 1px solid;
+  border-color: #4c70ba;
+  background: white; }
+  main header {
+    height: 50px;
+    background-color: #3b5998;
+    position: relative; }
+    main header ul {
+      margin-top: 0;
+      padding-left: 0; }
+    main header li {
+      position: relative;
+      list-style-type: none;
+      display: inline-block;
+      font-family: Ubuntu;
+      color: white;
+      padding-left: 30px;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      padding-right: 25px;
+      border-right: 1px solid #4c70ba; }
+      main header li:first-child {
+        padding-right: 35px; }
+      main header li:last-child {
+        border-right: none; }
+      main header li:focus, main header li:visited, main header li:hover {
+        cursor: pointer;
+        color: white;
+        text-decoration: none; }
+    main header .active:after, main header .active:before {
+      top: 99%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    main header .active:after {
+      border-top-color: #3b5998;
+      border-width: 10px;
+      margin-left: -10px;
+      z-index: 10; }
+  main #searchMenu {
+    text-align: center;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #3b5998;
+    border-bottom: 10px solid;
+    border-bottom-color: #4c70ba; }
+    main #searchMenu #searchBar {
+      position: relative;
+      width: 75%;
+      text-align: left;
+      line-height: 20px;
+      border-radius: 20px;
+      border: 1px solid #3b5998;
+      padding-left: 40px;
+      padding-right: 20px;
+      font-size: .8em;
+      font-family: Ubuntu; }
+      main #searchMenu #searchBar:focus, main #searchMenu #searchBar:visited {
+        outline: none; }
+    main #searchMenu #searchIcon {
+      position: absolute;
+      z-index: 1;
+      padding-top: 5px;
+      left: 45px;
+      color: #3b5998; }
+
+#link {
+  text-decoration: none; }
+
+.stuff {
+  background: #f7f7f7;
+  border-bottom: 10px solid;
+  border-bottom-color: #4c70ba;
+  padding: 10px 10px 0px 10px; }
+  .stuff img {
+    width: 60px; }
+  .stuff h5, .stuff p {
+    color: black;
+    font-family: Ubuntu;
+    font-size: 1.1em;
+    margin-left: 70px;
+    margin-top: -60px; }
+  .stuff p {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 30px; }
+  .stuff i {
+    float: right;
+    margin-top: -70px; }
+  .stuff .fa-play {
+    color: green; }
+  .stuff .fa-stop {
+    color: maroon; }
+
+footer {
+  color: white;
+  font-family: Ubuntu;
+  bottom: 0px;
+  position: relative; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: #800080; }
+
+/*# sourceMappingURL=twitchTv.css.map */
