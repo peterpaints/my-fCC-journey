@@ -1,0 +1,73 @@
+body {
+  background-color: #5676bd; }
+
+.container-fluid {
+  margin: 30px;
+  padding: 30px; }
+
+#greeting {
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 50px; }
+
+#quote-box {
+  background-color: #3b5998;
+  border-radius: 10px;
+  box-shadow: 3px 3px;
+  font-family: Ubuntu;
+  margin: 10%;
+  padding: 1%;
+  position: relative;
+  width: 80%; }
+
+#actual-quote {
+  text-align: center;
+  color: #fff; }
+
+#author {
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  color: #fff;
+  font-size: 0.9em;
+  font-style: italic; }
+
+#quote-left, #quote-right {
+  color: #fff;
+  position: relative;
+  right: 3%;
+  top: -15px; }
+
+#quote-right {
+  left: 100%;
+  top: 20px; }
+
+#buttons {
+  text-align: center; }
+  #buttons #tweet-quote {
+    float: left;
+    height: 43px;
+    margin-left: 15%; }
+  #buttons #new-quote {
+    background-color: #4160a4;
+    color: #fff;
+    float: right;
+    font-family: Ubuntu;
+    height: 43px;
+    margin-right: 15%;
+    opacity: 1.0; }
+    #buttons #new-quote:hover {
+      opacity: 0.6; }
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu;
+  margin-top: 200px; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #800080; }
+
+/*# sourceMappingURL=randomQuotesMachine.css.map */

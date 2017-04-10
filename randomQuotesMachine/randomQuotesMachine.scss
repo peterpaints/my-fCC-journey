@@ -1,0 +1,100 @@
+$font: Ubuntu;
+$text-color: #fff;
+$background-color: #5676bd;
+
+@mixin text-align {
+  text-align: center;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.container-fluid {
+  margin: 30px;
+  padding: 30px;
+}
+
+#greeting {
+  @include text-align;
+  color: $text-color;
+  font-family: $font;
+  font-size: 50px;
+}
+
+#quote-box {
+  background-color: #3b5998;
+  border-radius: 10px;
+  box-shadow: 3px 3px;
+  font-family: $font;
+  margin: 10%;
+  padding: 1%;
+  position: relative;
+  width: 80%;
+}
+
+#actual-quote {
+  @include text-align;
+  color: $text-color;
+}
+
+#author {
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  color: $text-color;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+#quote-left {
+  color: $text-color;
+  position: relative;
+  right: 3%;
+  top: -15px;
+}
+
+#quote-right {
+  @extend #quote-left;
+  left: 100%;
+  top: 20px;
+}
+
+#buttons {
+  @include text-align;
+
+  #tweet-quote {
+    float: left;
+    height: 43px;
+    margin-left: 15%;
+  }
+
+  #new-quote {
+    background-color: #4160a4;
+    color: $text-color;
+    float: right;
+    font-family: $font;
+    height: 43px;
+    margin-right: 15%;
+    opacity: 1.0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+footer {
+  @include text-align;
+  color: $text-color;
+  font-family: $font;
+  margin-top: 200px;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: #800080;
+    }
+  }
+}
