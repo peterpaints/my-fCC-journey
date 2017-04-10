@@ -1,0 +1,104 @@
+$font: Ubuntu;
+$text-color: #fff;
+$background-color: #5676bd;
+
+@mixin text-align {
+  text-align: center;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.container-fluid {
+  margin: 2%;
+  padding: 2%;
+}
+
+#title {
+  @include text-align;
+  color: $text-color;
+  font-family: $font;
+  font-size: 5em;
+}
+
+.conditions {
+  @include text-align;
+  background-color: #3b5998;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  color: $text-color;
+  height: auto;
+  margin: 5% 10% 5% 32.5%;
+  padding: 1.5%;
+  position: relative;
+  width: 35%;
+}
+
+#icon, #value, #units, #description {
+  display: inline-block;
+}
+
+#icon {
+  // border: solid;
+  bottom: 5px;
+  color: $text-color;
+  position: relative;
+}
+
+#value {
+  // border: solid;
+  color: $text-color;
+  font-family: $font;
+  font-size: 2.8em;
+  padding-bottom: 1%;
+  position: relative;
+}
+
+#units {
+  // border: solid;
+  color: $text-color;
+  font-family: $font;
+  font-size: 2.8em;
+  padding-bottom: 1%;
+  position: relative;
+  &:hover {
+      opacity: 0.7;
+      text-decoration: none;
+    }
+}
+
+#description {
+  // border: solid;
+  color: $text-color;
+  font-family: $font;
+  font-size: 2.8em;
+  font-style: italic;
+  margin-right: 3%;
+  padding-bottom: 1%;
+  position: relative;
+}
+
+#location {
+  @include text-align;
+  color: $text-color;
+  font-family: $font;
+  font-size: 1.6em;
+  position: relative;
+}
+
+footer {
+  @include text-align;
+  color: $text-color;
+  font-family: $font;
+  margin-top: 70px;
+  position: relative;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: #800080;
+    }
+  }
+}

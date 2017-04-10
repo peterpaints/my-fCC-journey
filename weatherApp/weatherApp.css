@@ -1,0 +1,78 @@
+body {
+  background-color: #5676bd; }
+
+.container-fluid {
+  margin: 2%;
+  padding: 2%; }
+
+#title {
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 5em; }
+
+.conditions {
+  text-align: center;
+  background-color: #3b5998;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  color: #fff;
+  height: auto;
+  margin: 5% 10% 5% 32.5%;
+  padding: 1.5%;
+  position: relative;
+  width: 35%; }
+
+#icon, #value, #units, #description {
+  display: inline-block; }
+
+#icon {
+  bottom: 5px;
+  color: #fff;
+  position: relative; }
+
+#value {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 2.8em;
+  padding-bottom: 1%;
+  position: relative; }
+
+#units {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 2.8em;
+  padding-bottom: 1%;
+  position: relative; }
+  #units:hover {
+    opacity: 0.7;
+    text-decoration: none; }
+
+#description {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 2.8em;
+  font-style: italic;
+  margin-right: 3%;
+  padding-bottom: 1%;
+  position: relative; }
+
+#location {
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 1.6em;
+  position: relative; }
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu;
+  margin-top: 70px;
+  position: relative; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #800080; }
+
+/*# sourceMappingURL=weatherApp.css.map */
