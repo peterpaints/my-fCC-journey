@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!-- bootstrap CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Animate CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<!-- FontAwesome -->
+		<script src="https://use.fontawesome.com/6ad42e0df3.js"></script>
+
+<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+
+<!-- bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- css -->
+    <link href="wikipediaViewer.css" rel="stylesheet" type="text/css">
+<!-- js -->
+    <script src="wikipediaViewer.js"></script>
+
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peter's Wikipedia Viewer</title>
+    <meta name="description" content="Peter's Wikipedia Viewer">
+    <meta name="author" content="Peter Musonye">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-center">Hey there! <br> Let's explore Wikipedia, shall we?</h1>
+      <div class="text-center">
+        <input id="search" type="search" data-provide="typeahead" autocomplete="off" />
+        <button id="random" class="btn btn-primary">
+          <i class="fa fa-random" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="text-center container-fluid">
+        <ul id="myWiki"></ul>
+      </div>
+    </div>
+    <footer class="text-center">
+      <p>Signed, <a href="https://github.com/peterpaints" target="_blank" title="Peter Musonye">Peter Musonye</a>.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  background-color: #5676bd; }
+
+.container-fluid {
+  margin: 20px;
+  padding: 20px; }
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 2.3em;
+  margin-bottom: 20px; }
+
+input {
+  outline: none; }
+
+input[type="search"], .btn {
+  border: solid 1px #ccc;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em; }
+
+input[type="search"] {
+  background: #f7f7f7 url(http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2.png) no-repeat -15px center;
+  background-size: 60px;
+  color: transparent;
+  font-family: Ubuntu;
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 5px;
+  width: 23px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: all .9s;
+  -moz-transition: all .9s;
+  transition: all .9s; }
+  input[type="search"]:hover {
+    background-color: #98acd7; }
+  input[type="search"]:focus {
+    width: 200px;
+    padding-left: 30px;
+    color: black;
+    background-color: #f7f7f7;
+    border-color: black;
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+
+.btn {
+  padding: 2px;
+  font-size: 1.4em; }
+  .btn:active {
+    outline: none; }
+  .btn:focus {
+    outline: none !important; }
+
+#myWiki {
+  margin-left: -40px; }
+
+#myWiki a {
+  background-color: #3b5998;
+  border: none;
+  color: #fff;
+  font-family: Ubuntu;
+  padding: 0; }
+  #myWiki a:hover {
+    opacity: 0.7; }
+
+.well {
+  background-color: #3b5998; }
+
+.well a h3 {
+  font-size: 2em; }
+
+footer {
+  color: #fff;
+  font-family: Ubuntu;
+  bottom: 0px;
+  position: relative; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #800080; }
+
+/*# sourceMappingURL=wikipediaViewer.css.map */

@@ -1,0 +1,112 @@
+$font: Ubuntu;
+$text-color: #fff;
+$background-color: #5676bd;
+
+@mixin text-align {
+  text-align: center;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.container-fluid {
+  margin: 20px;
+  padding: 20px;
+}
+
+h1 {
+  @include text-align;
+  color: $text-color;
+  font-family: $font;
+  font-size: 2.3em;
+  margin-bottom: 20px;
+}
+
+input {
+  outline: none;
+}
+
+input[type="search"], .btn {
+  border: solid 1px #ccc;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+}
+
+input[type="search"] {
+  background: #f7f7f7 url(http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2.png) no-repeat -15px center;
+  background-size: 60px;
+  color: transparent;
+  font-family: $font;
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 5px;
+  width: 23px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: all .9s;
+  -moz-transition: all .9s;
+  transition: all .9s;
+  &:hover {
+    background-color: #98acd7;
+  }
+  &:focus {
+    width: 200px;
+    padding-left: 30px;
+    color: black;
+    background-color: #f7f7f7;
+    border-color: black;
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  }
+}
+
+.btn {
+  padding: 2px;
+  font-size: 1.4em;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none !important;
+  }
+}
+
+#myWiki {
+  margin-left: -40px;
+}
+
+#myWiki a {
+  background-color: #3b5998;
+  border: none;
+  color: $text-color;
+  font-family: $font;
+  padding: 0;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.well {
+  background-color: #3b5998;
+}
+
+.well a h3 {
+  font-size: 2em;
+  // color: black;
+}
+
+footer {
+  color: $text-color;
+  font-family: $font;
+  bottom: 0px;
+  position: relative;
+  a {
+    color: $text-color;
+    &:hover {
+      color: #800080;
+    }
+  }
+}
