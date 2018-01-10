@@ -1,0 +1,122 @@
+$titlefont: Ubuntu;
+$btnfont: 'Lato';
+$white: #fff;
+$wall1: #1d2120;
+$wall2: #c5d5cb;
+$color1: #5a5c51;
+$display: #e3e0cf;
+$keys: #262216;
+$redbtn: #a72d45;
+
+body {
+  background: linear-gradient(to bottom right, $wall1, $wall2);
+  height: 670px;
+}
+
+.container-fluid {
+  background-color: $color1;
+  height: 470px;
+  margin: 30px auto;
+  width: 330px;
+  border: 2px solid $color1;
+  border-top-left-radius: 60%20px;
+  border-top-right-radius: 60%20px;
+  border-bottom-left-radius: 60%20px;
+  border-bottom-right-radius: 60%20px;
+  box-shadow: 7px 10px 20px 1px $wall1;
+}
+
+.title {
+  color: $white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-family: $titlefont;
+}
+
+.display {
+  height: 60px;
+  width: 100%;
+  background-color: $display;
+  border-radius: 5px;
+}
+
+.answer {
+  margin-right: 10px;
+  font-size: 2.3em;
+  color: $wall1;
+}
+
+.working {
+  margin-top: -17px;
+  margin-right: 13px;
+  color: lighten($wall1, 30);
+  font-size: 1.2em;
+}
+
+#buttons {
+  display: inline-block;
+  margin-top: 20px;
+  color: $white;
+  position: relative;
+  width: 100%;
+}
+
+button {
+  font-family: $btnfont;
+  // font-weight: bold;
+  font-size: 2em;
+  width: 58px;
+  height: 50px;
+  margin: 0 5px 10px 8px;
+  background-color: $keys;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 1px 3px 0 0 darken($keys, 30),
+              inset -1px -3px 10px 1px $keys;
+  text-decoration: none !important;
+  outline: none !important;
+
+  &:active {
+    transform: translate(0, 5px);
+    box-shadow: none;
+  }
+
+  &:active,
+  &:focus,
+  &:visited {
+    text-decoration: none !important;
+    outline: none !important;
+  }
+}
+
+button[value="="] {
+  height: 110px;
+  float: right;
+  margin-top: -60px;
+  margin-right: 4px;
+}
+
+button[value="0"] {
+  width: 133px;
+}
+
+.red {
+  background-color: $redbtn;
+  box-shadow: 0 3px 0 0 darken($redbtn, 20);
+}
+
+footer {
+  color: $wall1;
+  font-family: $titlefont;
+  bottom: 0;
+  position: relative;
+
+  a {
+    color: $redbtn;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
